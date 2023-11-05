@@ -1,1 +1,14 @@
 # Schema Database EasyMeal
+# Elenco Tabelle
+  # Cliente
+  # Commento
+  # Ordine
+  # Pagamento
+  # Prenotazione
+  # Prodotto
+  # Registro_Cliente
+  # Registro_Utente
+  # Ristorante
+  # Tavolo
+  # Utente
+  # Voto
