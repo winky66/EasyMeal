@@ -5,7 +5,7 @@
 
     include "./conn.php";
 
-    $res = $conn->execute_query("SELECT * FROM ristorante");
+    $res = $conn->execute_query("SELECT ID_ristorante, Ragione_sociale FROM ristorante");
     $res1=array();
     while ($row = mysqli_fetch_assoc($res)) 
     {
@@ -15,5 +15,5 @@
     $decoded=json_encode($res1);
 
     echo $decoded;
-
+ 
 ?>

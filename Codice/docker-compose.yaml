@@ -3,7 +3,7 @@ version: '3.8'
 services:
   mysql:
     image: mysql:latest
-    container_name: mysql-server
+    container_name: mysql-server-winky
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: easymeal
@@ -22,7 +22,7 @@ services:
     build:
       context: ./PHP
       dockerfile: Dockerfile
-    container_name: php-server
+    container_name: php-server-winky
     ports:
       - "8888:80"
     volumes:
@@ -44,7 +44,7 @@ services:
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin
-    container_name: phpmyadmin
+    container_name: phpmyadmin-winky
     links:
       - mysql
     environment:
